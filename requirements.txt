@@ -1,9 +1,9 @@
 flask
 google-generativeai
-google-cloud-texttospeech
-langchain
+sentence-transformers
 faiss-cpu
+numpy
+pyttsx3
 pydub
 soundfile
-numpy
 
