@@ -10,7 +10,8 @@ import pyttsx3
 # -------------------------------------------------------------
 # CONFIG
 # -------------------------------------------------------------
-genai.configure(api_key="AIzaSyD-nsbwOhcxU1bpt6kg4u19FDFJ8wy5Ib4")
+import os
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Load local embedding model (FREE)
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
@@ -145,3 +146,4 @@ if __name__ == "__main__":
     ans, audio = run_audio_rag_agent("user_question.wav")
     print("Final Answer:", ans)
     print("Audio File:", audio)
+
