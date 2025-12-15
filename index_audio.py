@@ -5,7 +5,8 @@ import numpy as np
 import faiss
 import pickle
 
-genai.configure(api_key="AIzaSyD-nsbwOhcxU1bpt6kg4u19FDFJ8wy5Ib4")
+import os
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -58,3 +59,4 @@ def build_audio_rag_db(long_audio_path):
 
 if __name__ == "__main__":
     build_audio_rag_db("long_audio.wav")
+
