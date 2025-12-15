@@ -1,0 +1,7 @@
+google-generativeai
+google-cloud-texttospeech
+langchain
+faiss-cpu
+pydub
+soundfile
+numpy
