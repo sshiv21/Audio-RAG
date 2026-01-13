@@ -1,0 +1,13 @@
+google-generativeai
+google-cloud-texttospeech
+langchain
+faiss-cpu
+pydub
+soundfile
+numpy
+sentence-transformers
+streamlit
+pyttsx3
+python-dotenv
+streamlit-mic-recorder
+pydub
