@@ -1,9 +1,0 @@
-flask
-google-generativeai
-sentence-transformers
-faiss-cpu
-numpy
-pyttsx3
-pydub
-soundfile
-
