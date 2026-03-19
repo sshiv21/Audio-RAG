@@ -78,7 +78,7 @@ def index_audio_file(audio_path):
     timestamps.append((current_start, duration_ms))
 
     vectors = embedder.encode(chunks).astype("float32")
-    index = faiss.IndexFlatL2(vectors.shape[1])
+    index = faiss.IndexFlatIP(vectors.shape[1])
     index.add(vectors)
 
     faiss.write_index(index, os.path.join(DATA_DIR, f"{filename}.index"))
